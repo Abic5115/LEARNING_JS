@@ -14,7 +14,7 @@ while(i<vehicle.length)
     i++
 
 }
-if(flag=true){
+if(flag==true){
     console.log("vehicle found")
 }
 else{
