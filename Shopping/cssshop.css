@@ -1,0 +1,24 @@
+#box1{
+    width: 400px;
+    height: 1200px;
+    background-color: rgb(248, 127, 13);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+}
+
+
+#showdata{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(212, 212, 212);
+    text-align: left;
+
+}
+
+#img1{
+    width: 200px;
+    height: 200px;
+    
+}
