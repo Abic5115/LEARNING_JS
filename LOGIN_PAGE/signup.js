@@ -59,16 +59,17 @@ else {
     let details=[]
     
         let signupdetails ={
-            username1:user,
             email1:mail,
             password1:pass
         };
          
         check.push(signupdetails)
         localStorage.setItem('studentdet', JSON.stringify(check))
-        document.getElementById('username').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('password').value = '';
+        document.getElementById('name1').value = '';
+        document.getElementById('email1').value = '';
+        document.getElementById('pass1').value = '';
+        document.getElementById('pass2').value = '';
+        
     }
 else{
     alert("enter valid details")
