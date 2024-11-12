@@ -73,7 +73,9 @@ var fetchdata = ()=>{
         }
     
           
-    })
+    }
+    
+)
 
     }
     fetchdata()

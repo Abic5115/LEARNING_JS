@@ -1,0 +1,46 @@
+
+#main{
+    display: flex;
+   
+}
+
+#box1{
+    width: 300px;
+    height: 200px;
+    background-color: yellow;
+    
+}
+
+#box2{
+    width: 300px;
+    height: 200px;
+    background-color: red;
+}
+
+#box3{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(252, 4, 177);
+}
+
+
+#banana{
+    width: 30px;
+    height: 20px;
+}
+
+#apple{
+    width: 30px;
+    height: 20px;
+}
+
+#cucumber{
+    width: 30px;
+    height: 20px;
+}
+
+#cart1{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(178, 204, 233);
+}
