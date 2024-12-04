@@ -1,0 +1,10 @@
+#paragraph{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.newparagraph{
+   font-size: 60px !important;
+   color: red;
+}
+

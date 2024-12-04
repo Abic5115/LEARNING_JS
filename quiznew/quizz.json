@@ -1,0 +1,23 @@
+[{
+    
+    "question": "What is the capital of kerala?",
+    "options":["india","pakisthan","cochin","thiruvanathapuram"],
+    "answer": "thiruvanathapuram"
+
+},
+{
+   
+    "question": "Which year is this year?",
+    "options":["2023","2044","2024","1999"],
+    "answer": "2024"
+
+},
+{
+    
+    "question": " currency of india?",
+    "options":["rupee","dinar","dollar","euro"],
+    "answer": "rupee"
+
+}
+
+]

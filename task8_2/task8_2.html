@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="task8_2.css" />
+  </head>
+  <body>
+    <div id="main">
+      <p id="paragraph">HELLO</p>
+      <button id="changeit">change</button>
+
+      <button id="likehere">likebutton</button>
+      <button id="dislike">dislike</button>
+      <div id="likebox">
+        likes:
+        <p id="increaselike">0</p>
+      </div>
+    </div>
+  </body>
+  <script>
+    let paragraph = document.getElementById("paragraph");
+    let button1 = document.getElementById("changeit");
+    button1.addEventListener("click", () => {
+      paragraph.classList.toggle("newparagraph");
+    });
+
+    // like  button ,    dislike button
+
+    let dislike = document.getElementById("dislike");
+    let increaselike = document.getElementById("increaselike");
+
+    let increase = parseInt(increaselike.innerHTML);
+
+    let likehere = document.getElementById("likehere");
+    likehere.addEventListener("click", () => {
+      console.log(increase);
+      increase += 1;
+      increaselike.innerHTML = increase;
+    });
+
+    dislike.addEventListener("click", () => {
+      increase -= 1;
+      increaselike.innerHTML = increase;
+    });
+  </script>
+</html>

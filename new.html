@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Countdown Timer</h1>
+    <p>Click the button to start the countdown</p>
+    
+    <button id="startButton">Start Countdown</button>
+    
+    <div class="message" id="message"></div>
+  </div>
+
+  <script>
+    // Countdown Timer Function
+    function countdownTimer(seconds) {
+      return new Promise((resolve, reject) => {
+        if (seconds <= 0) {
+          reject("Time's up!"); // Reject if the input time is zero or negative
+          return;
+        }
+
+        const timer = setInterval(() => {
+          document.getElementById("message").innerText = `Time remaining: ${seconds} seconds`; // Update the message
+          seconds--; // Decrease the seconds by 1
+
+          // If the countdown reaches zero, clear the interval and resolve the promise
+          if (seconds < 0) {
+            clearInterval(timer);
+            resolve("Countdown complete!"); // Resolve when the countdown finishes
+          }
+        }, 1000); // Set the interval to 1 second (1000 milliseconds)
+      });
+    }
+
+    // Start Countdown Function
+    async function startCountdown(seconds) {
+      try {
+        // Await the countdownTimer to complete or fail
+        const result = await countdownTimer(seconds);
+        document.getElementById("message").innerText = result; // Display success message
+      } catch (error) {
+        document.getElementById("message").innerText = error; // Display error message
+      }
+    }
+
+    // Add event listener to the "Start Countdown" button
+    document.getElementById("startButton").addEventListener("click", () => {
+      startCountdown(5); // Start countdown with 5 seconds when the button is clicked
+    });
+  </script>
+
+</body>
+</html>

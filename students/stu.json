@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 20,
+      "grade": "A",
+      "major": "Computer Science",
+      "enrollmentDate": "2022-09-01"
+    },
+    {
+      "id": 2,
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "age": 22,
+      "grade": "B",
+      "major": "Mathematics",
+      "enrollmentDate": "2021-09-01"
+    },
+    {
+      "id": 3,
+      "firstName": "Sam",
+      "lastName": "Brown",
+      "age": 19,
+      "grade": "A",
+      "major": "Physics",
+      "enrollmentDate": "2023-01-15"
+    },
+    {
+      "id": 4,
+      "firstName": "Emily",
+      "lastName": "Davis",
+      "age": 21,
+      "grade": "C",
+      "major": "Biology",
+      "enrollmentDate": "2022-09-01"
+    },
+    {
+      "id": 5,
+      "firstName": "Michael",
+      "lastName": "Wilson",
+      "age": 23,
+      "grade": "B",
+      "major": "Engineering",
+      "enrollmentDate": "2020-09-01"
+    }
+  ]
+  
